@@ -4,7 +4,10 @@
 ---
 
 ### 📉 Overview
-This pipeline supports **gene-based burden testing** of rare variants using SKAT and related methods. It is designed for **flexibility** in variant filtering, population structure correction, and real-case sample setups. It includes options for **covariates**, **QC visualization**, and **multiple filtering combinations** to adapt to clinical or family-based studies.
+
+This pipeline supports **gene-based burden testing** of rare variants using SKAT and related methods. It is designed for **flexibility** in variant filtering, population structure correction, and real-case sample setups. It includes options for **covariates**, **QC visualization**, and **multiple filtering combinations** to adapt to clinical or family-based studies. 
+
+All scripts are richly commented to guide users through the logic, assumptions, and interpretation of each step.
 
 ---
 
