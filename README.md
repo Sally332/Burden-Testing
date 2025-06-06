@@ -32,8 +32,6 @@ This script performs **gene-based rare variant association testing** with severa
 - Mixed Models: correct for relatedness, ancestry, batch using covariates
 - Outputs: results are saved in TSV format and ready for downstream analysis
 
-SKAT handles heterogeneous variant effects, increasing power in Mendelian or rare disorders.
-
 ---
 
 ### 📊 Additional Modules and Considerations
