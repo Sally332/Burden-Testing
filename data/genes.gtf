@@ -1,4 +1,0 @@
-# data/genes.gtf
-## Minimal GTF showing two genes for collapsing
-chr1	ENSEMBL	gene	1000	5000	.	+	.	gene_id "GENE1"; gene_name "GeneA";
-chr1	ENSEMBL	gene	8000	12000	.	-	.	gene_id "GENE2"; gene_name "GeneB";

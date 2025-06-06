@@ -1,0 +1,64 @@
+
+# Example raw_variants.tsv
+#VariantID	Gene	Consequence	gnomAD_AF	CADD	REFVAR_INGROUP_NAMES	REFVAR_OUTGROUP
+# ------------------------------------------------------------------
+chr1_123456_A_T	TP53	missense_variant	0.0005	25.3	FAM1_001,FAM1_002,FAM1_003	
+chr2_234567_C_G	BRCA1	stop_gained	0.002	32.1	FAM1_001,FAM1_002	CTRL_001
+chr3_345678_T_C	CHEK2	frameshift_variant	0.0001	18.7	FAM1_003	
+chr1_127890_G_A	ATM	splice_acceptor_variant	0.0008	29.0	FAM2_001,FAM2_002	
+chr2_238000_T_G	MLH1	missense_variant	0.003	17.5	FAM3_001,FAM3_002	CTRL_002
+
+
+
+# Example Genotype Matrix (geno_matrix.tsv)
+# Rows = Genes, Columns = Individuals (with dosage data)
+# Values = 0 (homozygous ref), 1 (het), 2 (homozygous alt)
+# ------------------------------------------------------------------
+# GeneID	FAM1_001	FAM1_002	FAM1_003	FAM2_001	FAM2_002	CTRL_001	CTRL_002
+TP53	0	1	1	0	2	0	0
+BRCA1	1	1	1	0	0	0	0
+CHEK2	0	0	2	1	1	0	1
+ATM	2	2	2	0	1	0	1
+MLH1	0	0	0	1	1	0	0
+
+# Example Phenotype Table (pheno.tsv)
+# Includes SampleID and Disease Status
+# 1 = Case, 0 = Control
+# ------------------------------------------------------------------
+# SampleID	Phenotype
+FAM1_001	1
+FAM1_002	1
+FAM1_003	1
+FAM2_001	1
+FAM2_002	1
+CTRL_001	0
+CTRL_002	0
+
+# Example Covariate Table (covar.tsv)
+# Includes PCs, age, and sex for each sample
+# ------------------------------------------------------------------
+# SampleID	PC1	PC2	Age	Sex
+FAM1_001	0.1	-0.3	52	F
+FAM1_002	0.2	-0.1	49	F
+FAM1_003	0.0	0.0	30	M
+FAM2_001	-0.2	0.2	60	M
+FAM2_002	-0.1	0.1	55	F
+CTRL_001	0.3	-0.4	48	M
+CTRL_002	0.1	-0.2	51	F
+
+# Example Region_map (region_map_example.tsv)
+#------------------------------------------------------------------
+#VariantID	RegionID
+chr1_100001_A_T	chr1:100000-101000
+chr1_100205_C_G	chr1:100000-101000
+chr2_200150_G_A	chr2:200000-201000
+chr2_200178_T_C	chr2:200000-201000
+chr3_300020_A_G	chr3:300000-301000
+
+# Example BED-style_Region_File (region_bed_file.tsv)
+#------------------------------------------------------------------
+chr	start	end	region_id
+chr1	100000	101000	chr1:100000-101000
+chr2	200000	201000	chr2:200000-201000
+chr3	300000	301000	chr3:300000-301000
+chr4	400000	401000	chr4:400000-401000
