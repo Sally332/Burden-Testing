@@ -20,7 +20,7 @@ Filtering is a critical step to ensure that the burden tests focus on variants m
 - Prioritization by functional scores (e.g., CADD)
 - Segregation filtering (e.g., ≥ N affected individuals in a family, absent in controls/outgroup)
 - Optional filtering by clinical annotations, inheritance model, or panel membership
-- Option to filter variants mapped to **custom regions** (BED or TSV format)
+- Option to aggregate and test variants by custom genomic regions (provided as BED or TSV format), instead of by gene
 
 ---
 
